@@ -1,0 +1,166 @@
+/*    blue box  */
+.box1{
+    background: #3943AD;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    float: left;
+}
+
+/*    yellow box  */
+.box2{
+    background: yellow;
+    font-size: 40px;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    margin-left: 250px;
+    border: 1px solid black;
+    float: left;
+    line-height: 190px;
+    font-weight: bold;
+}
+
+
+/*    green box  */
+.box3{
+    background: #56aa2c;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    margin-left: 150px;
+    border: 1px solid black;
+    float: left;
+}
+
+/*    green box text  */
+.textc{
+    margin-top: 170px;
+}
+
+/*    Image animation  */
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+
+/*    Animated image box  */
+.animation_box{
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    margin-left: 140px;
+    border: 1px solid black;
+    float: left;
+}    
+
+
+/*    Animated image  */
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    width: 60%;
+    height:60%;
+    margin-left: 40px;
+}
+
+
+/*    Draggable photo box  */
+.photobox{
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+
+/*    Draggable photo image  */
+#photoboximg{
+    float: left;
+    width: 100%;
+    height:100%;
+}
+
+
+/*    large grey box  */
+.bigbox{
+    padding: 5px;
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 600px;
+    min-width: 600px;
+    border: 2px solid red;
+    background: grey;
+    margin-left: 100px;
+    float: left;
+}
+
+/*    First row with 4 box  */
+.firstrow{
+    width: 1346px;
+}
+
+/*    Second row with 2 box  */
+.secondrow{
+    width: 1346px;
+    float: left;
+    margin-top: 50px;
+}
+
+/*    Third row with 2 box  */
+.thirdrow{
+     width: 1346px;
+     float: left;
+    margin-top: 20px;
+}
+
+
+/*    Drop box-1  */
+.dropbox1{
+    position: relative;
+    text-align: center;
+    border:2px solid green;
+    color: black;
+    max-height:200px;
+    max-width: 200px; 
+    min-width: 200px; 
+    min-height: 200px;
+    float:left;
+    margin-left: 100px;
+    margin-right: 616px;
+    line-height: 200px;
+}
+
+/*    Drop box-2  */
+.dropbox2{
+    text-align: center;
+    border:2px solid black; 
+    color:black;
+    max-height:200px; 
+    max-width: 200px; 
+    min-width: 200px; 
+    min-height: 200px;
+    float:left;
+    line-height: 200px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+      
+<!--          Title of the webpage  -->
+        <title>Assignment1</title>
+      
+<!--      /*    Css is linked  */-->
+        <link rel="stylesheet" type="text/css" href="style1.css">
+      
+<!--      Script for drag and drop-->
+    <script>
+               function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+               function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+        }
+
+    </script>
+      
+  </head>
+  <body>
+      
+<!--      First row with 4 box including the animation-->
+      
+      <div class="firstrow">
+      
+<!--          Blue box-->
+        <div class="box1">Text A</div>
+<!--          Green box        -->
+        <div class="box2">Text B</div>
+<!--          Yellow box  -->
+        <div class="box3"><p class="textc">Text C</p></div>
+<!--          Animated image box-->
+        <div class="animation_box"><img class="swingimage" src="image/simpson.png"></div>
+      
+      </div>    
+      
+      <!--      Second row with 2 box -->
+    <div class="secondrow">	
+<!--        Draggable photo box-->
+	   <div class="photobox">
+	   <img id="photoboximg" ondragstart="drag(event)"  draggable="true" src="image/cat.png"/>
+	   </div>
+<!--        Large grey box-->
+	   <div class="bigbox">Text D</div>
+    </div>
+      
+      <!--      Second row with 2 box -->
+    <div class="thirdrow">	
+<!--        First drop box-->
+	   <div id="dp1" class="dropbox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	   </div>
+<!--	   Second drop box-->
+	   <div id="dp2" class="dropbox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+	   </div>
+    </div>
+      
+  </body>
+</html>
